@@ -3,15 +3,20 @@ import { createContext, useState, useEffect } from "react";
 
 export const CartContext = createContext({});
 
-const initailCartItems = localStorage.getItem("shopping-cart")
-  ? JSON.parse(localStorage.getItem("shopping-cart"))
-  : [];
+let initailCartItems = [];
+if (typeof window !== 'undefined') {
+  initailCartItems = localStorage.getItem("shopping-cart")
+    ? JSON.parse(localStorage.getItem("shopping-cart"))
+    : [];
+}
 
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState(initailCartItems);
 
   useEffect(() => {
-    localStorage.setItem("shopping-cart", JSON.stringify(cartItems));
+    if (typeof window !== 'undefined') {
+      localStorage.setItem("shopping-cart", JSON.stringify(cartItems));
+    }
   }, [cartItems]);
 
   const getItemQuantity = (id) => {
