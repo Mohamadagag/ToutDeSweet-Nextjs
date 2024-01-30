@@ -5,7 +5,6 @@ import { CiPhone } from "react-icons/ci";
 import { RiTiktokFill } from "react-icons/ri";
 import { RiInstagramLine } from "react-icons/ri";
 import { RiFacebookFill } from "react-icons/ri";
-import { GiShoppingCart } from "react-icons/gi";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -13,6 +12,8 @@ import Cart from "./Cart";
 
 const Navbar = () => {
   const pathname = usePathname()
+
+
   return (
     <nav>
       <div className="hidden sm:block">

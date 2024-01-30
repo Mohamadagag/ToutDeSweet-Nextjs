@@ -33,6 +33,7 @@ export default function HomePage() {
             width={500}
             height={500}
             className="w-full h-auto object-cover"
+            alt="concept"
           />
         </div>
         <div className="w-1/3">
@@ -41,6 +42,7 @@ export default function HomePage() {
             width={500}
             height={500}
             className="w-full h-auto object-cover"
+            alt="values"
           />
         </div>
         <div className="w-1/3">
@@ -49,6 +51,7 @@ export default function HomePage() {
             width={500}
             height={500}
             className="w-full h-auto object-cover"
+            alt="team"
           />
         </div>
       </div>
@@ -73,7 +76,11 @@ export default function HomePage() {
       <div className="px-[10px] py-[40px] bg-[#8c959a] flex justify-around flex-wrap">
         <div className="flex items-center mb-5">
           <div className="w-[90px] mr-5">
-            <Image src={pic1} className="w-full h-full object-cover mr-5" />
+            <Image
+              src={pic1}
+              className="w-full h-full object-cover mr-5"
+              alt="Delivery - Cakes & Big orders"
+            />
           </div>
           <div>
             <h4 className="text-xl text-white font-semibold">
@@ -89,7 +96,11 @@ export default function HomePage() {
 
         <div className="flex items-center mb-5">
           <div className="w-[90px] mr-5">
-            <Image src={pic2} className="w-full h-full object-cover mr-5" />
+            <Image
+              src={pic2}
+              className="w-full h-full object-cover mr-5"
+              alt="Delivery - Desserts & Bites"
+            />
           </div>
           <div>
             <h4 className="text-xl text-white font-semibold">
@@ -105,7 +116,11 @@ export default function HomePage() {
 
         <div className="flex items-center mb-5">
           <div className="w-[90px] mr-5">
-            <Image src={pic3} className="w-full h-full object-cover mr-5" />
+            <Image
+              src={pic3}
+              className="w-full h-full object-cover mr-5"
+              alt="Catering events"
+            />
           </div>
           <div>
             <h4 className="text-xl text-white font-semibold">
@@ -121,7 +136,11 @@ export default function HomePage() {
 
         <div className="flex items-center mb-5">
           <div className="w-[90px] mr-5">
-            <Image src={pic4} className="w-full h-full object-cover mr-5" />
+            <Image
+              src={pic4}
+              className="w-full h-full object-cover mr-5"
+              alt="Hosting events"
+            />
           </div>
           <div>
             <h4 className="text-xl text-white font-semibold">Hosting events</h4>
