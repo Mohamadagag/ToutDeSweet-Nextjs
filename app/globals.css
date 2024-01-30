@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-slide {
+  width: 100% !important;
+}
+
+footer input::placeholder {
+  color: #fff;
+}
