@@ -15,7 +15,8 @@ const Navbar = () => {
 
 
   return (
-    <nav>
+    <nav className="relative">
+      <div className="fixed top-0 left-0 right-0 z-10 bg-white">
       <div className="hidden sm:block">
        <div className="flex justify-between p-2">
         <div className="flex">
@@ -73,6 +74,7 @@ const Navbar = () => {
             FIND US
           </Link>
         </div>
+      </div>
       </div>
     </nav>
   )

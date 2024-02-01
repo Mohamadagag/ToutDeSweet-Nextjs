@@ -12,6 +12,7 @@ if (typeof window !== 'undefined') {
 
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState(initailCartItems);
+  const [open, setIssOpen] = useState(false)
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -62,6 +63,10 @@ export const CartProvider = ({ children }) => {
     setCartItems((cuurItems) => cuurItems.filter((item) => item.id !== id));
   };
 
+  const OpenCart = () =>{
+    setIssOpen(!open);
+  }
+
   return (
     <CartContext.Provider
       value={{
@@ -70,6 +75,8 @@ export const CartProvider = ({ children }) => {
         IncreseCartQuantity,
         DecreseCartQuantity,
         removeItemFromCart,
+        open,
+        OpenCart,
       }}
     >
       {children}

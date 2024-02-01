@@ -1,11 +1,8 @@
-import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 import "./globals.css";
 import { CartProvider } from "@/context/CartContext";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Tou De Sweet",
@@ -15,7 +12,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="bg-white">
-      <body>
+      <body className="relative">
+        <div className="mb-[18rem]"></div>
         <CartProvider>
           <Navbar />
           {children}

@@ -17,12 +17,12 @@ const CartItem = ({id, quantity}) => {
             <div className="flex flex-col items-center">
                 <div className="text-white flex">
                     <h2>{singleProduct.name}</h2>
-                    <span className="ml-5">{quantity}</span>
                 </div>
-                <div className="mt-5 border rounded-lg inline-block px-2">
-                <button className='hover:text-[#7b9999]' onClick={() => DecreseCartQuantity(id)}>-</button>
+                    <span className="mt-1 self-start text-white">AED {singleProduct.price}.00</span>
+                <div className="mt-5 self-start border rounded-lg inline-block px-2">
+                <button className='hover:text-white' onClick={() => DecreseCartQuantity(id)}>-</button>
       <span className='mx-5'>{quantity}</span>
-      <button className='hover:text-[#7b9999]' onClick={() =>IncreseCartQuantity(id)}>+</button>
+      <button className='hover:text-white' onClick={() =>IncreseCartQuantity(id)}>+</button>
                 </div>
             </div>
     </div>
