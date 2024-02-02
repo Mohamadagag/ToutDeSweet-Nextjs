@@ -30,7 +30,7 @@ const Cart = () => {
     </div>
 
     {open ? 
-          <div className={`bg-[#7b9999] absolute top-0 right-0 z-20 w-[340px] h-screen px-3 pt-2 translate-x-full duration-150 opacity-0 ${open ? "translate-x-0 opacity-100 " : ""}`}>
+          <div className={`bg-[#7b9999] absolute top-0 right-0 z-20 w-[340px] h-screen px-3 pt-2 duration-300 opacity-0 ${open ? "translate-x-0 opacity-100 " : ""}`}>
           <div className="flex justify-between items-center border-b pb-2">
               <h2 className="text-white text-lg font-semibold">Shopping Cart</h2>
               <button className="text-white text-lg cursor-pointer" onClick={() => OpenCart()}><IoClose /></button>
