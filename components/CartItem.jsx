@@ -14,7 +14,7 @@ const CartItem = ({id, quantity}) => {
         <div>
             <Image src={singleProduct.image[0]} width={100} height={100} className="object-cover" alt={singleProduct.name} />
         </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-start w-[10rem]">
                 <div className="text-white flex">
                     <h2>{singleProduct.name}</h2>
                 </div>
